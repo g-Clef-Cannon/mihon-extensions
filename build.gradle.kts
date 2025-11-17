@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 33
         applicationId = "eu.kanade.tachiyomi.extension.en.anotherpieceofcandy"
         versionCode = 1
         versionName = "1.0.0"
