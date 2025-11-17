@@ -14,7 +14,7 @@ Custom Mihon/Tachiyomi extensions for webcomics.
 4. Enter the repository URL:
 
 ```
-https://raw.githubusercontent.com/YOUR_USERNAME/mihon-extensions/main/repo/index.min.json
+https://raw.githubusercontent.com/g-Clef-Cannon/mihon-extensions/main/repo/index.min.json
 ```
 
 5. Tap **Add**
