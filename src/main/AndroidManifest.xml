@@ -2,18 +2,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:label="Another Piece of Candy">
+        android:label="Tachiyomi: Another Piece of Candy"
+        android:hasCode="true">
+        <meta-data
+            android:name="tachiyomi.extension.nsfw"
+            android:value="0" />
+        <meta-data
+            android:name="tachiyomi.extension.class"
+            android:value=".AnotherPieceOfCandyFactory" />
+        
         <activity
             android:name=".AnotherPieceOfCandyUrlActivity"
             android:excludeFromRecents="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="eu.kanade.tachiyomi.EXTENSION_SOURCE" />
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="another-piece-of-candy.thecomicseries.com"
+                    android:pathPattern="/.*"
+                    android:scheme="https" />
             </intent-filter>
-            <meta-data
-                android:name="tachiyomi.extension.class"
-                android:value=".AnotherPieceOfCandyFactory" />
         </activity>
     </application>
 
