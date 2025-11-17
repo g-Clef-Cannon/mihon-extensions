@@ -76,6 +76,9 @@ tasks.register("writeManifestFile") {
             tempFile.parentFile.mkdirs()
             tempFile.write("""<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature
+        android:name="tachiyomi.extension"
+        android:required="false" />
     <application
         android:label="\${appName}"
         android:icon="@mipmap/ic_launcher">
