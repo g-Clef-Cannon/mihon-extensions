@@ -14,4 +14,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "another-piece-of-candy"
+rootProject.name = "mihon-extensions"
+
+include("src:en:anotherpieceofcandy")
+
